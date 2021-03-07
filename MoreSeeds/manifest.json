@@ -1,0 +1,10 @@
+﻿{
+  "Name": "MoreSeeds",
+  "Author": "Plastikmensch",
+  "Version": "1.0.0",
+  "Description": "Gives more seeds from Seed Maker",
+  "UniqueID": "plastikmensch.MoreSeed",
+  "EntryDll": "MoreSeeds.dll",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": []
+}
