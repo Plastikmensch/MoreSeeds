@@ -22,44 +22,6 @@ namespace MoreSeeds
         {
             Config = Helper.ReadConfig<ModConfig>();
             helper.Events.GameLoop.UpdateTicked += OnUpdateTicked;
-            helper.Events.Player.InventoryChanged += OnInventoryChanged;
-        }
-
-        // Doesn't update fast enough, can be removed
-        private void OnInventoryChanged(object sender, InventoryChangedEventArgs e)
-        {
-            if (e.IsLocalPlayer)
-            {
-                Monitor.Log("Inventory changed");
-                foreach (Item item in e.Removed)
-                {
-                    Monitor.Log($"removed: {item.Name}");
-                    if (IsCrop(item))
-                    {
-                        Monitor.Log("Item is Crop");
-                        //lastQuality = (item as SObject).Quality;
-                    }
-                    Monitor.Log($"removed category: {item.Category} {item.getCategoryName()}");
-                    Monitor.Log($"removed index: {item.ParentSheetIndex}");
-                    Monitor.Log($"removed quality: {(item as SObject).Quality}");
-                }
-                foreach (ItemStackSizeChange item in e.QuantityChanged)
-                {
-                    Monitor.Log("Stack size changed");
-                    if (item.OldSize > item.NewSize)
-                    {
-                        Monitor.Log($"removed: {item.Item.Name}");
-                        if (IsCrop(item.Item))
-                        {
-                            Monitor.Log("Item is Crop");
-                            //lastQuality = (item.Item as SObject).Quality;
-                        }
-                        Monitor.Log($"removed category: {item.Item.Category} {item.Item.getCategoryName()}");
-                        Monitor.Log($"removed index: {item.Item.ParentSheetIndex}");
-                        Monitor.Log($"removed quality: {(item.Item as SObject).Quality}");
-                    }
-                }
-            }
         }
 
         private void OnUpdateTicked(object sender, UpdateTickedEventArgs e)
@@ -74,11 +36,12 @@ namespace MoreSeeds
                     {
                         if (IsCrop(Game1.player.CurrentItem))
                         {
-                            Monitor.Log("Player holds Crop");
+                            //Monitor.Log("Player holds Crop");
                             lastQuality = (Game1.player.CurrentItem as SObject).Quality;
                         }
                         if (pair.Value.heldObject.Value != null)
                         {
+                            /*
                             Monitor.Log("Seed Maker has item");
                             foreach (var prop in pair.Value.heldObject.Value.GetType().GetProperties())
                             {
@@ -88,6 +51,7 @@ namespace MoreSeeds
                             {
                                 Monitor.Log($"Seed Maker: {prop.Name}: {prop.GetValue(pair.Value, null)}");
                             }
+                            */
                             if (pair.Value.heldObject.Value.Stack < 4) 
                             {
                                 Monitor.Log("adding to stack");
