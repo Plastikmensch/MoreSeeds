@@ -1,17 +1,22 @@
-
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreSeeds", "MoreSeeds\MoreSeeds.csproj", "{E74D708B-1FDF-47A1-A7BB-5D079A2CA7EB}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoreSeeds", "MoreSeeds\MoreSeeds.csproj", "{E9C89810-DFC0-4167-A693-D11ACF917660}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E74D708B-1FDF-47A1-A7BB-5D079A2CA7EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E74D708B-1FDF-47A1-A7BB-5D079A2CA7EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E74D708B-1FDF-47A1-A7BB-5D079A2CA7EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E74D708B-1FDF-47A1-A7BB-5D079A2CA7EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9C89810-DFC0-4167-A693-D11ACF917660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9C89810-DFC0-4167-A693-D11ACF917660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9C89810-DFC0-4167-A693-D11ACF917660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9C89810-DFC0-4167-A693-D11ACF917660}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

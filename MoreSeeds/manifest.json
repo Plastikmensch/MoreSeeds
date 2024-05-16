@@ -1,10 +1,10 @@
 ﻿{
   "Name": "MoreSeeds",
   "Author": "Plastikmensch",
-  "Version": "1.0.0",
+  "Version": "2.0.0",
   "Description": "Gives more seeds from Seed Maker",
   "UniqueID": "plastikmensch.MoreSeed",
   "EntryDll": "MoreSeeds.dll",
-  "MinimumApiVersion": "3.0.0",
+  "MinimumApiVersion": "4.0.0",
   "UpdateKeys": ["Github:Plastikmensch/MoreSeeds"]
 }
